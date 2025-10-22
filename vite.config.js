@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/treasure-vue/'
+  base: '/treasure-vue/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -15,4 +15,5 @@ export default defineConfig({
     open: true
   }
 })
+
 
