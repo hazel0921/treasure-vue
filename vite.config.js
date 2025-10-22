@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/treasure-vue/',
+  base: '/treasure-vue/', // ✅ 确保路径正确
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -15,5 +15,3 @@ export default defineConfig({
     open: true
   }
 })
-
-
