@@ -44,9 +44,10 @@ const routes = [
   }
 ]
 
+// 🚀 核心修复：手动指定 base 路径（Vite dev 模式下生效）
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes   // ✅ 使用上面定义的完整 routes 数组
+  history: createWebHistory('/treasure-vue/'),
+  routes
 })
 
 export default router
